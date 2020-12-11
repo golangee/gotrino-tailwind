@@ -1,0 +1,9 @@
+github.com/golangee/dom v0.0.0-20201210093916-f81538256b51 h1:2aNFECOklq4tS9NTxhjLNrFryKjSPSa/yfwRy2HYUsE=
+github.com/golangee/dom v0.0.0-20201210093916-f81538256b51/go.mod h1:MV/9eGmwLM6eK4vQoTyai6f8eMIR1Ye9r3AqtlHU/ts=
+github.com/golangee/gotrino v0.0.0-20201211122155-ae8f55d446a1 h1:UwOAg2a+UTkHqzXBvFwT712FUTgaQ44/0cfZyL73qUA=
+github.com/golangee/gotrino v0.0.0-20201211122155-ae8f55d446a1/go.mod h1:HAGKSdbT34dtlJtLogt9scgzohq0QYUq9yeTG6WIAbo=
+github.com/golangee/gotrino-html v0.0.0-20201211122709-a63f9f29fce5 h1:3yY7BPkXln6a0b7nqi1an6PZA+z/GHoR5l7ghW9A7tI=
+github.com/golangee/gotrino-html v0.0.0-20201211122709-a63f9f29fce5/go.mod h1:mmWXWFsZNL1XlAfC4nOJzc6VRS+orIP+nDWYn1xLdUE=
+github.com/golangee/property v0.0.0-20201210101032-527a9915f02f/go.mod h1:Z8QLRlSe+ZuhI67xD93EUIQ2nCEGBvX9LSuVcWhK+0U=
+github.com/golangee/property v0.0.0-20201210172659-1ccebcf04a20 h1:bu6/14aOpzH3hATLIrOXPy8TQpym3CVGVizNYi6iUU8=
+github.com/golangee/property v0.0.0-20201210172659-1ccebcf04a20/go.mod h1:Z8QLRlSe+ZuhI67xD93EUIQ2nCEGBvX9LSuVcWhK+0U=

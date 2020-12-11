@@ -1,0 +1,183 @@
+:root {
+    --color-primary: 27, 140, 48;
+    --color-on-primary: #ffffff;
+
+    --color-secondary: #000000;
+    --color-on-secondary: #ecc94b;
+
+    --color-surface: #ffffff;
+    --color-on-surface: #000000;
+
+    --color-background: #ffffff;
+    --color-on-background: #000000;
+}
+
+.hover\:text-on-primary:hover {
+    --tw-text-opacity: 1;
+    color: var(--color-on-primary);
+}
+
+.hover\:bg-primary:hover {
+    --tw-text-opacity: 1;
+    background-color: rgba(var(--color-primary), var(--tw-bg-opacity));
+}
+
+.text-on-primary {
+    --tw-text-opacity: 1;
+    color: var(--color-on-primary);
+}
+
+.text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(var(--color-primary), var(--tw-text-opacity));
+}
+
+.border-primary {
+    --tw-border-opacity: 1;
+    border-color: rgba(var(--color-primary), var(--tw-border-opacity))
+}
+
+.text-on-secondary {
+    --tw-text-opacity: 1;
+    color: var(--color-on-secondary);
+}
+
+.text-on-surface {
+    --tw-text-opacity: 1;
+    color: var(--color-on-surface);
+}
+
+.text-on-background {
+    --tw-text-opacity: 1;
+    color: var(--color-on-background);
+}
+
+.divide-primary {
+    --tw-divide-opacity: 1;
+    border-color: var(--color-primary);
+}
+
+.divide-secondary {
+    --tw-divide-opacity: 1;
+    border-color: var(--color-secondary);
+}
+
+.ring-primary {
+    --tw-ring-color: var(--color-primary);
+}
+
+.ring-secondary {
+    --tw-ring-color: var(--color-secondary);
+}
+
+.bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgba(var(--color-primary), var(--tw-bg-opacity));
+}
+
+.border-primary {
+    --tw-border-opacity: 1;
+    border-color: rgba(var(--color-primary), var(--tw-border-opacity));
+}
+
+.hover\:border-primary:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(var(--color-primary), var(--tw-border-opacity))
+}
+
+
+.bg-secondary {
+    --tw-bg-opacity: 1;
+    background-color: var(--color-secondary);
+}
+
+.bg-surface {
+    --tw-bg-opacity: 1;
+    background-color: var(--color-surface);
+}
+
+.bg-background {
+    --tw-bg-opacity: 1;
+    background-color: var(--color-background);
+}
+
+.align-sub {
+    vertical-align: sub;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/materialicons.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.material-icons.text-sm {
+    font-size: 18px;
+}
+
+.material-icons.text-base {
+    font-size: 24px;
+}
+
+.material-icons.md-text-lg {
+    font-size: 36px;
+}
+
+.material-icons.md-text-xl {
+    font-size: 48px;
+}
+
+
+/* circular progress not available */
+@keyframes wtk-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes wtk-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124;
+    }
+}
+
+.wtk-mdc-circular-progress {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    animation: wtk-rotate 2s linear infinite;
+}
+
+.wtk-mdc-circular-progress__path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: wtk-dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+  /*  stroke: var(--color-primary);*/
+}
