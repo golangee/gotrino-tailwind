@@ -6,12 +6,17 @@
           content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!-- Version: {{.Version}} -->
+    <!-- Commit: {{.Commit}} -->
+    <!-- Time: {{.Time}} -->
+    <!-- Compiler: {{.Compiler}} -->
+    <!-- Host: {{.Host}} -->
 
-    <!-- keep forms.css before tailwind, otherwise opacity etc. will not work correctly -->
+    <!-- keep gotrino.css before tailwind, otherwise opacity etc. will not work correctly -->
     <link href="/assets/css/gotrino.css" rel="stylesheet">
     <link href="/assets/css/tailwind.min.css" rel="stylesheet"> <!-- version 2.0.1 -->
 
-    <script src="wasm_exec.js?v={{.WasmBridgeVersion}}"></script>
+    <script src="wasm_exec.js?v={{.Version}}"></script>
     {{if .HotReload}}
         <script>
             function longPoll() {
@@ -39,7 +44,7 @@
             const go = new Go();
 
             if (isSafari) {
-                fetch('app.wasm?v={{.WasmVersion}}').then(response =>
+                fetch('app.wasm?v={{.Version}}').then(response =>
                     response.arrayBuffer()
                 ).then(bytes =>
                     WebAssembly.instantiate(bytes, go.importObject)
@@ -55,5 +60,9 @@
     {{end}}
 
 </head>
-<body>{{- .Body -}}</body>
+<body>
+{{if .HasError}}
+    {{- .Error -}}
+{{end}}
+</body>
 </html>
