@@ -3,8 +3,8 @@ module github.com/golangee/gotrino-tailwind
 go 1.15
 
 require (
-	github.com/golangee/dom v0.0.0-20201210093916-f81538256b51
-	github.com/golangee/gotrino v0.0.0-20201211122155-ae8f55d446a1
-	github.com/golangee/gotrino-html v0.0.0-20201211122709-a63f9f29fce5
-	github.com/golangee/property v0.0.0-20201210172659-1ccebcf04a20
+	github.com/golangee/dom v0.0.0-20201217141617-bfee68df2c80
+	github.com/golangee/gotrino v0.0.0-20201217145214-0b84df22917b
+	github.com/golangee/gotrino-html v0.0.0-20201217152007-c12acb83fd4a
+	github.com/golangee/property v0.0.0-20201217105724-d213780b9841
 )

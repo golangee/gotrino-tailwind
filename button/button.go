@@ -44,6 +44,7 @@ func (c *Button) SetContent(content v.Renderable) *Button {
 func (c *Button) Render() v.Node {
 	return h.Button(
 		h.Style("min-width", "64px"),
+		h.Type("button"),
 		h.Class("text-left hover:bg-primary bg-opacity-10 bg-transparent text-primary focus:outline-none p-2 rounded text-center"), // not w-full
 		h.AddClickListener(c.action),
 		c.content,
