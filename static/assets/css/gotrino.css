@@ -80,6 +80,11 @@
     border-color: rgba(var(--color-primary), var(--tw-border-opacity));
 }
 
+.focus-within\:border-primary:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(var(--color-primary), var(--tw-border-opacity))
+}
+
 .hover\:border-primary:hover {
     --tw-border-opacity: 1;
     border-color: rgba(var(--color-primary), var(--tw-border-opacity))
@@ -179,5 +184,5 @@
     stroke-dashoffset: 0;
     animation: wtk-dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
     stroke-linecap: round;
-  /*  stroke: var(--color-primary);*/
+    /*  stroke: var(--color-primary);*/
 }
